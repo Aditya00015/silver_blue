@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 16:28:41.467599",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district_zone_id",
+  "district_zone_name",
+  "district_zone_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "district_zone_id",
+   "fieldtype": "Link",
+   "label": "District Zone ID",
+   "options": "District Zone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "district_zone_id.unique_code",
+   "fieldname": "district_zone_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "District Zone Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "district_zone_id.zone_name",
+   "fieldname": "district_zone_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "District Zone Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 16:35:47.690064",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "District Zone ChildTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

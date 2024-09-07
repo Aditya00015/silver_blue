@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-06 11:53:47.917602",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code_digit_setting_section",
+  "country_zone",
+  "states",
+  "state_zone",
+  "districts",
+  "district_zone",
+  "area",
+  "area_zone",
+  "society",
+  "sub_society",
+  "street",
+  "column_break_dsjk",
+  "data_uink",
+  "states_preview",
+  "state_zone_preview",
+  "districts_preview",
+  "districts_zone_preview",
+  "districts_zone_preview____copy",
+  "area_zone_preview",
+  "society_preview",
+  "sub_society_preview",
+  "street_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "code_digit_setting_section",
+   "fieldtype": "Section Break",
+   "label": "Code Digit Setting"
+  },
+  {
+   "fieldname": "country_zone",
+   "fieldtype": "Select",
+   "label": "Country Zone",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "states",
+   "fieldtype": "Select",
+   "label": "States",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "state_zone",
+   "fieldtype": "Select",
+   "label": "State Zone",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "districts",
+   "fieldtype": "Select",
+   "label": "Districts",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "district_zone",
+   "fieldtype": "Select",
+   "label": "District Zone",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Select",
+   "label": "Area",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "area_zone",
+   "fieldtype": "Select",
+   "label": "Area Zone",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "society",
+   "fieldtype": "Select",
+   "label": "Society",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "sub_society",
+   "fieldtype": "Select",
+   "label": "Sub Society",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Select",
+   "label": "Street",
+   "options": "Single(1)\nDouble(01)"
+  },
+  {
+   "fieldname": "column_break_dsjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "911",
+   "fieldname": "data_uink",
+   "fieldtype": "Data",
+   "label": "Country Zone Preview",
+   "read_only": 1
+  },
+  {
+   "default": "9111",
+   "fieldname": "states_preview",
+   "fieldtype": "Data",
+   "label": "States Preview",
+   "read_only": 1
+  },
+  {
+   "default": "91111",
+   "fieldname": "state_zone_preview",
+   "fieldtype": "Data",
+   "label": "State Zone Preview",
+   "read_only": 1
+  },
+  {
+   "default": "911111",
+   "fieldname": "districts_preview",
+   "fieldtype": "Data",
+   "label": "Districts Preview",
+   "read_only": 1
+  },
+  {
+   "default": "9111111",
+   "fieldname": "districts_zone_preview",
+   "fieldtype": "Data",
+   "label": "Districts Zone Preview",
+   "read_only": 1
+  },
+  {
+   "default": "91111111",
+   "fieldname": "districts_zone_preview____copy",
+   "fieldtype": "Data",
+   "label": "Area Preview",
+   "read_only": 1
+  },
+  {
+   "default": "911111111",
+   "fieldname": "area_zone_preview",
+   "fieldtype": "Data",
+   "label": "Area Zone Preview",
+   "read_only": 1
+  },
+  {
+   "default": "9111111111",
+   "fieldname": "society_preview",
+   "fieldtype": "Data",
+   "label": "Society Preview",
+   "read_only": 1
+  },
+  {
+   "default": "91111111111",
+   "fieldname": "sub_society_preview",
+   "fieldtype": "Data",
+   "label": "Sub Society Preview",
+   "read_only": 1
+  },
+  {
+   "default": "911111111111",
+   "fieldname": "street_preview",
+   "fieldtype": "Data",
+   "label": "Street Preview",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-06 12:43:48.248293",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Location wise Code Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

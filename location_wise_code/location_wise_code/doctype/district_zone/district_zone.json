@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{district_code}-{zone_name}-{zone_type}",
+ "creation": "2024-09-05 16:24:25.717025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "zone_name",
+  "zone_type",
+  "district",
+  "code_digit_option",
+  "zone_wise_count",
+  "area_list",
+  "district_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "zone_type",
+   "fieldtype": "Select",
+   "label": "Zone Type",
+   "options": "\nCity\nRural"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District ",
+   "options": "Districts"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zone_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Zone Wise Count"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "District Unique Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "District Zone Name"
+  },
+  {
+   "fieldname": "area_list",
+   "fieldtype": "Table",
+   "label": "Area List",
+   "options": "Area ChildTable"
+  },
+  {
+   "fetch_from": "district.unique_code",
+   "fieldname": "district_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 16:36:49.227968",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "District Zone",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

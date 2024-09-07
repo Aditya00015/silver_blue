@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-04 15:30:27.288470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "country_zone",
+  "country_zone_name",
+  "zone_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "country_zone",
+   "fieldtype": "Link",
+   "label": "Country Zone",
+   "options": "Country Zone"
+  },
+  {
+   "fetch_from": "country_zone.unique_code",
+   "fieldname": "zone_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Zone Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "country_zone.zone_name",
+   "fieldname": "country_zone_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Zone Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 16:21:56.945135",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Country Zones Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

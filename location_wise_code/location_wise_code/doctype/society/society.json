@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{area_code}-{society_name}",
+ "creation": "2024-09-05 18:06:04.330975",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "society_name",
+  "area_zone",
+  "area_code",
+  "code_digit_option",
+  "society_wise_count",
+  "sub_society_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "society_name",
+   "fieldtype": "Data",
+   "label": "Society Name"
+  },
+  {
+   "fieldname": "area_zone",
+   "fieldtype": "Link",
+   "label": "Area Zone",
+   "options": "Area Zone"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "society_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Society Wise Count"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Society Unique Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "area_zone.unique_code",
+   "fieldname": "area_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Area Code"
+  },
+  {
+   "fieldname": "sub_society_list",
+   "fieldtype": "Table",
+   "label": "Sub Society List",
+   "options": "Sub Society ChildTable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 15:46:59.536250",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Society",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

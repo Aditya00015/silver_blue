@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{country_code}-{zone_name}",
+ "creation": "2024-09-04 14:45:17.558794",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "zone_name",
+  "country",
+  "country_code",
+  "code_digit_option",
+  "country_wise_count",
+  "states_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "Country Zone Name"
+  },
+  {
+   "fieldname": "country_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Country Wise Count"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Zone Unique Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "states_list",
+   "fieldtype": "Table",
+   "label": "States List",
+   "options": "States Table"
+  },
+  {
+   "fetch_from": "country.custom_country_code",
+   "fieldname": "country_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Country Code"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 16:21:24.866641",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Country Zone",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "country",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

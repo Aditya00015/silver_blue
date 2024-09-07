@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{state_code}-{zone_name}",
+ "creation": "2024-09-05 10:53:21.114256",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "zone_name",
+  "state",
+  "state_code",
+  "code_digit_option",
+  "zone_wise_count",
+  "district_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "State Zone Name"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "States"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State Zone Unique Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zone_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Zone Wise Count"
+  },
+  {
+   "fieldname": "district_list",
+   "fieldtype": "Table",
+   "label": "District List",
+   "options": "District ChildTable"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "state.unique_code",
+   "fieldname": "state_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "State Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 16:18:02.322629",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "State Zone",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

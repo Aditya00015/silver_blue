@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 16:49:11.750292",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "area_id",
+  "area_name",
+  "area_wise_code"
+ ],
+ "fields": [
+  {
+   "fetch_from": "area_id.area_name",
+   "fieldname": "area_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "area_id.unique_code",
+   "fieldname": "area_wise_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area Wise Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area_id",
+   "fieldtype": "Link",
+   "label": "Area ID",
+   "options": "Area"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 16:39:23.489985",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Area ChildTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

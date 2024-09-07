@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{country_zone_code}-{state_name}",
+ "creation": "2024-09-04 18:22:28.749539",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "state_name",
+  "state_type",
+  "country_zone",
+  "country_zone_code",
+  "zone_name",
+  "code_digit_option",
+  "state_wise_count",
+  "country",
+  "state_zone_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "country_zone",
+   "fieldtype": "Link",
+   "label": "Country Zone",
+   "options": "Country Zone"
+  },
+  {
+   "fieldname": "state_name",
+   "fieldtype": "Data",
+   "label": "State Name"
+  },
+  {
+   "fetch_from": "country_zone.zone_name",
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Zone Name"
+  },
+  {
+   "fieldname": "state_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "State Wise Count"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State Unique Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "country_zone.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Country"
+  },
+  {
+   "fieldname": "state_zone_list",
+   "fieldtype": "Table",
+   "label": "State Zone List",
+   "options": "State Zone ChildTable"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "country_zone.unique_code",
+   "fieldname": "country_zone_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Country Zone Code"
+  },
+  {
+   "fieldname": "state_type",
+   "fieldtype": "Select",
+   "label": "State Type",
+   "options": "State\nUnion Territorie"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 15:44:30.921362",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "States",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

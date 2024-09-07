@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{sub_society_code}-{street_name}",
+ "creation": "2024-09-05 18:45:03.516959",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unique_code",
+  "street_name",
+  "sub_society",
+  "sub_society_code",
+  "code_digit_option",
+  "street_wise_count"
+ ],
+ "fields": [
+  {
+   "fieldname": "street_name",
+   "fieldtype": "Data",
+   "label": "Street Name"
+  },
+  {
+   "fieldname": "sub_society",
+   "fieldtype": "Link",
+   "label": "Sub Society ",
+   "options": "Sub Society"
+  },
+  {
+   "fieldname": "code_digit_option",
+   "fieldtype": "Select",
+   "label": "Code Digit Option",
+   "options": "Single(1)\nDouble(01)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "street_wise_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Street Wise Count"
+  },
+  {
+   "fieldname": "unique_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Street Unique Code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sub_society.unique_code",
+   "fieldname": "sub_society_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Sub Society Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-06 16:53:01.764178",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Street",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

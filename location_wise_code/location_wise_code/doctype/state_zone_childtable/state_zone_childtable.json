@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 11:57:35.419666",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "state_zone_id",
+  "state_zone_name",
+  "state_zone_code"
+ ],
+ "fields": [
+  {
+   "fetch_from": "state_zone_id.zone_name",
+   "fieldname": "state_zone_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State Zone Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "state_zone_id.unique_code",
+   "fieldname": "state_zone_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State Zone Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "state_zone_id",
+   "fieldtype": "Link",
+   "label": "State Zone ID",
+   "options": "State Zone",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 16:15:11.310086",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "State Zone ChildTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

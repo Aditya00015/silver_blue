@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 18:35:24.728140",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_society_id",
+  "sub_society_name",
+  "sub_society_code"
+ ],
+ "fields": [
+  {
+   "fetch_from": "sub_society_id.sub_society_name",
+   "fieldname": "sub_society_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Society Name"
+  },
+  {
+   "fetch_from": "sub_society_id.unique_code",
+   "fieldname": "sub_society_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Society Code"
+  },
+  {
+   "fieldname": "sub_society_id",
+   "fieldtype": "Link",
+   "label": "Sub Society ID",
+   "options": "Sub Society"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-06 14:52:26.022182",
+ "modified_by": "Administrator",
+ "module": "Location Wise Code",
+ "name": "Sub Society ChildTable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
